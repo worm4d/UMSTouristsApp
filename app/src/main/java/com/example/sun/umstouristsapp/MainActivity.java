@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     ImageSwitcher myImageSwitcher;
     Button leftImageButton, rightImageButton;
-    Button newAttraction, newFacility, newAdmin;
+    Button newAttraction, newFacility, newAdmin, newPackage;
     ImageView camera, map;
 
     int imageSwitcherImages[] = {R.drawable.first_cat, R.drawable.second_cat, R.drawable.third_cat, R.drawable.forth_cat, R.drawable.fifth_cat, };
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         newAttraction = (Button) findViewById(R.id.main_attraction);
         newFacility = (Button) findViewById(R.id.main_facility);
         newAdmin = (Button) findViewById(R.id.main_admin);
+        newPackage = (Button) findViewById(R.id.main_packages);
         camera = (ImageView) findViewById(R.id.main_camera);
         map = (ImageView) findViewById(R.id.main_map);
 
@@ -60,6 +61,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,Admin.class);
+                startActivity(intent);
+            }
+        });
+
+        newPackage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Packages.class);
                 startActivity(intent);
             }
         });

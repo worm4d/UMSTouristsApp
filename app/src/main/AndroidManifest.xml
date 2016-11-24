@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".Attraction" />
         <activity android:name=".Facility" />
-        <activity android:name=".Admin"></activity>
+        <activity android:name=".Admin" />
+        <activity android:name=".Packages"></activity>
     </application>
 
 </manifest>

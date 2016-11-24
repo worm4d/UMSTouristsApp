@@ -13,9 +13,9 @@
     <ImageSwitcher
         android:id="@+id/main_image_switcher"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="180dp"
         android:layout_marginBottom="28dp"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="20dp">
 
     </ImageSwitcher>
 
@@ -52,12 +52,20 @@
         android:text="FACILITY"/>
 
     <Button
-        android:id="@+id/main_admin"
+        android:id="@+id/main_packages"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/main_facility"
         android:layout_centerHorizontal="true"
-        android:text="ADMIN"/>
+        android:text="TOURISM PACKAGES"/>
+
+    <Button
+        android:id="@+id/main_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_packages"
+        android:layout_centerHorizontal="true"
+        android:text="ADMIN LOGIN"/>
 
     <ImageView
         android:id="@+id/main_camera"
